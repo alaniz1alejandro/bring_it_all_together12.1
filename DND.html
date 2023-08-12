@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<!--this is my Bringing It All Together web page 
+By: alejandro alaniz
+12 AUG 2023-->
+<html lang="en">
+    <!--language for the html-->
+<head>
+    
+    <!--link the js file-->
+    <script src="D20.js"></script>
+    <!--opening for the header-->
+   
+<!--linking the css-->
+    <link href="stringStyle.css" rel="stylesheet" type="text/css">
+    <title>D20 Page</title>
+    <!--title on the tab-->
+</head>
+<!--close for the header-->
+<body>
+    
+    <!--this is the opening of the body-->
+    <h1>Welcome to my D20 page
+    </h1>
+    <!--this is my meme as well as the center command-->
+    <center><img id="Pic" src="fallingdice.gif"></center><br>
+    <br>
+    <!--the first action on the button is the 10 sec timer, the second rolls the d20, the next activates the gif, after thta the music starts-->
+    <center> <button onclick="setTimeout(myFunction, 10000);  RollD20();show(); play();" value="PLAY" id="btnID" class ="button"> ROLL D20!</button></center>
+   <center><h4> D20 result: <div id="die1Res">I hope you survive</div> <br>
+    You got this <div id="gameRes"></div> <br></center></h4>
+    <br>
+    <br>
+
+
+<!--this is the scrept for the audio-->
+        </audio>
+        <script>
+            function myFunction() {
+                alert('bet you thoght somthing would happen!');
+            }
+            </script>
+   <center><img id="image"
+    src= "countdown.gif"
+    alt="GFG image" /></center> 
+</div>
+<script>
+    function show() {
+        /* Access image by id and change
+        the display property to block*/
+        document.getElementById('image')
+            .style.display = "block";
+        document.getElementById('btnID')
+            .style.display = "none";
+    }
+</script>
+<style>
+    /* Set display to none for image*/
+    #image {
+        display: none;
+    }
+</style>
+<!--this is the script that plays the music-->
+<script>
+    function play() {
+      var audio = document.getElementById("audio");
+      audio.play();
+    }
+  </script>
+    <!--this is the music for the DND page -->
+  <audio id="audio" src="Double Violin Concerto 1st Movement - J.S. Bach.mp3"></audio>
+</head>
+<!--this button will refresh the page-->
+<button onClick="window.location.reload();">Refresh Page</button>
+
+
+
+    
+</body>
+</html>
